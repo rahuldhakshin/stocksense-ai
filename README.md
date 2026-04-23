@@ -1,6 +1,17 @@
 # StockSense AI
 
-Production-style Indian Stock Market Analytics & Prediction platform built with FastAPI, scikit-learn, React, Vite, Recharts, TailwindCSS, SQLite, and yfinance.
+StockSense AI is an Indian stock market analytics project I built to explore the full pipeline from market-data ingestion to feature engineering, model training, API development, and frontend visualization.
+
+It combines FastAPI, scikit-learn, React, Vite, Recharts, TailwindCSS, SQLite, and yfinance in one end-to-end app.
+
+## Why I Built This
+
+I wanted to build something that was more than just a notebook model. The goal was to put together:
+
+- a resumable market-data pipeline
+- a feature engineering workflow with technical indicators
+- a simple but usable prediction layer
+- a frontend that makes the analysis easier to explore
 
 ## Features
 
@@ -30,6 +41,12 @@ You can also run:
 bash setup.sh
 bash run.sh
 ```
+
+## Notes
+
+- The repo does not include generated datasets, SQLite caches, or trained model artifacts.
+- You need to run the data pipeline and model training locally before prediction endpoints will return model outputs.
+- This project is for learning and exploration, not financial advice.
 
 ## Data Pipeline
 
@@ -94,9 +111,17 @@ bash run.sh
 
 ## Screenshots
 
-- Dashboard screenshot placeholder
-- Stock analysis screenshot placeholder
-- Portfolio screenshot placeholder
+I have not added screenshots yet. I plan to add:
+
+- dashboard view
+- stock analysis screen
+- portfolio analysis screen
+
+## Known Limitations
+
+- Market data depends on `yfinance`, so live fetches can fail or be rate-limited.
+- The prediction system is a learning project and should not be treated as a real trading signal.
+- Some market endpoints can be slow on first load because they compute live summaries across many tickers.
 
 ## Tech Stack
 
